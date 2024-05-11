@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-FuncMR/Pods-FuncMR-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ADAL/ADAL.framework
+${PODS_ROOT}/AzureSpatialAnchors/bin/frameworks/AzureSpatialAnchors.framework
+${PODS_ROOT}/AzureSpatialAnchors/bin/frameworks/CoarseReloc.framework

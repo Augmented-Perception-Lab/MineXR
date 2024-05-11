@@ -1,0 +1,6 @@
+framework module AzureSpatialAnchors {
+  umbrella header "AzureSpatialAnchors.h"
+
+  export *
+  module * { export * }
+}

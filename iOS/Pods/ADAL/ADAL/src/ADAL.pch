@@ -1,0 +1,104 @@
+// Copyright (c) Microsoft Corporation.
+// All rights reserved.
+//
+// This code is licensed under the MIT License.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files(the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and / or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions :
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+
+
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+
+#if TARGET_OS_IPHONE
+    #import <UIKit/UIKit.h>
+#else
+    #import <AppKit/AppKit.h>
+#endif
+
+/*
+ If you're seeing a failure on this line, it's likely that you're consuming ADAL through CocoaPods or as a submodule
+
+ If you're using CocoaPods:
+
+ - Make sure you add the ":submodules => true" to your pod file, e.g.
+
+ pod 'ADAL', '~> 2.7', :submodules => true
+
+ If you're using submodules:
+
+ - When you update submodules, make sure you use "--recursive"
+ */
+
+#import "IdentityCore_Internal.h"
+#import "ADAL_Internal.h"
+
+#ifndef DebugLog
+#ifdef DEBUG
+#   define DebugLog(fmt, ...) NSLog((@"%s[%d][%@] " fmt), __PRETTY_FUNCTION__, __LINE__, [[NSThread currentThread] isEqual:[NSThread mainThread]] ? @"main" : @"work", ##__VA_ARGS__);
+#else
+#   define DebugLog(...)
+#endif
+#endif
+
+#if __has_include("../../../aad_overrides.h")
+#include "../../../aad_overrides.h"
+#endif
+
+
+#if !defined(__clang__) || __clang_major__ < 3
+#   ifndef __bridge
+#       define __bridge
+#   endif
+
+#   ifndef __bridge_retain
+#       define __bridge_retain
+#   endif
+
+#   ifndef __bridge_retained
+#       define __bridge_retained
+#   endif
+
+#   ifndef __bridge_transfer
+#       define __bridge_transfer
+#   endif
+
+#   ifndef __autoreleasing
+#       define __autoreleasing
+#   endif
+
+#   ifndef __strong
+#       define __strong
+#   endif
+
+#   ifndef __unsafe_unretained
+#       define __unsafe_unretained
+#   endif
+
+#   ifndef __weak
+#       define __weak
+#   endif
+#endif
+
+#endif
