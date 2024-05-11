@@ -1,7 +1,12 @@
 # MineXR Source Code and Dataset
 This repository contains the source code and dataset from the paper [*MineXR: Mining Personalized Extended Reality Interfaces*](https://augmented-perception.org/publications/2024-minexr.html) published at CHI 2024.
 
+![teaser](./readme_imgs/teaser.png)
+
 ## Source Code
+
+![architecture](./readme_imgs/architecture.png)
+
 The source code largely consists of four components in each directory:
 * [iOS](./iOS/README.md): code for the iOS mobile app for widget creation and placement
 * [Unity](./Unity/README.md): code for simultaneous preview on HoloLens 2 and layout reconstruction in Unity Editor
@@ -15,6 +20,10 @@ Each directory has more detailed instructions in their `README.md`.
 
 
 ## Dataset
+
+<img src="./readme_imgs/example_widgets.png" alt="example widgets" width="400">
+<img src="./readme_imgs/example_layouts.png" alt="example layouts" width="400">
+
 The dataset is available as a [zip file](https://drive.google.com/file/d/18NNp5OT3uRggXmFxgpxFju9abXWWeWo6/view?usp=sharing). The file contains the following files:
 
 * `screenshots_widgets/`: This directory contains all image files of screenshots and widgets created by each participant. Private information was redacted during the data collection and through post-processing. 
