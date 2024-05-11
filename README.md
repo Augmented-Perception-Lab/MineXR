@@ -1,5 +1,5 @@
 # MineXR Source Code and Dataset
-This repository contains the source code and dataset from the paper [*MineXR: Mining Personzlied Extended Reality Interfaces*](https://augmented-perception.org/publications/2024-minexr.html) published at CHI 2024.
+This repository contains the source code and dataset from the paper [*MineXR: Mining Personalized Extended Reality Interfaces*](https://augmented-perception.org/publications/2024-minexr.html) published at CHI 2024.
 
 ## Source Code
 The source code largely consists of four components in each directory:
@@ -48,20 +48,7 @@ We provide helper functions in C# to extract translation, rotation, and scale fr
 * `room_scans/`: This directory contains sample 3D scans of rooms where the data were collected. 
 
 ## Cite
-```
-@inproceedings {Cho24, 
- author = {Cho, Hyunsung and Yan, Yukang and Todi, Kashyap and Parent, Mark and Smith, Missie and Jonker, Tanya and Benko, Hrvoje and Lindlbauer, David}, 
- title = {MineXR: Mining Personalized Extended Reality Interfaces}, 
- year = {2024}, 
- publisher = {Association for Computing Machinery}, 
- address = {New York, NY, USA}, 
- url = {https://doi.org/10.1145/3613904.3642394}, 
- doi = {10.1145/3613904.3642394}, 
- keywords = {Extended Reality, Personalized Interfaces, Interface Mining}, 
- location = {Honolulu, HI, USA}, 
- series = {CHI '24} 
- }
-```
+You can find the citation on the project website [*MineXR: Mining Personalized Extended Reality Interfaces*](https://augmented-perception.org/publications/2024-minexr.html) 
 
 
 <details>
