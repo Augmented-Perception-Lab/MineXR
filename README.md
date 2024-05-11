@@ -46,3 +46,35 @@ We provide helper functions in C# to extract translation, rotation, and scale fr
 }
 ```
 * `room_scans/`: This directory contains sample 3D scans of rooms where the data were collected. 
+
+## Cite
+```
+@inproceedings {Cho24, 
+ author = {Cho, Hyunsung and Yan, Yukang and Todi, Kashyap and Parent, Mark and Smith, Missie and Jonker, Tanya and Benko, Hrvoje and Lindlbauer, David}, 
+ title = {MineXR: Mining Personalized Extended Reality Interfaces}, 
+ year = {2024}, 
+ publisher = {Association for Computing Machinery}, 
+ address = {New York, NY, USA}, 
+ url = {https://doi.org/10.1145/3613904.3642394}, 
+ doi = {10.1145/3613904.3642394}, 
+ keywords = {Extended Reality, Personalized Interfaces, Interface Mining}, 
+ location = {Honolulu, HI, USA}, 
+ series = {CHI '24} 
+ }
+```
+
+
+<details>
+  <summary>Copyright Notice</summary>
+The screenshots contained in the MineXR dataset may contain copyrighted work.
+
+By downloading the MineXR dataset (the "Database"), you (the "Researcher") hereby agree to the following terms and conditions:
+
+1. Carnegie Mellon University makes no representations or warranties regarding the Database, including but not limited to warranties of non-infringement or fitness for a particular purpose.
+
+2. Researcher accepts full responsibility for his or her use of the Database and shall defend and indemnify the MineXR team and Carnegie Mellon University, including their employees, Trustees, officers and agents, against any and all claims arising from Researcher's use of the Database, including but not limited to Researcher's use of any copies of copyrighted images that he or she may create from the Database.
+
+3. Researcher may provide research associates and colleagues with access to the Database provided that they first agree to be bound by these terms and conditions.
+
+4. If Researcher is employed by a for-profit, commercial entity, Researcher's employer shall also be bound by these terms and conditions, and Researcher hereby represents that he or she is fully authorized to enter into this agreement on behalf of such employer.
+</details>
