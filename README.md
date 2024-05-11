@@ -20,9 +20,10 @@ Each directory has more detailed instructions in their `README.md`.
 
 
 ## Dataset
-
-<img src="./readme_imgs/example_widgets.png" alt="example widgets" width="300">
-<img src="./readme_imgs/example_layouts.png" alt="example layouts" width="300">
+<p float="center">
+  <img src="./readme_imgs/example_widgets.png" alt="example widgets" width="400">
+  <img src="./readme_imgs/example_layouts.png" alt="example layouts" width="400">
+</p>
 
 The dataset is available as a [zip file](https://drive.google.com/file/d/18NNp5OT3uRggXmFxgpxFju9abXWWeWo6/view?usp=sharing). The file contains the following files:
 
